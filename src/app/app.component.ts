@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'Titulo do projeto 001 - Angular';
+  title2 = 'Outro titulo'
+  a = 10;
+  b = 20;
+  soma = this.a+this.b;
+
+  printTitle(): string{
+    return this.title;
+  //filter e map no angular
+  }
 }
