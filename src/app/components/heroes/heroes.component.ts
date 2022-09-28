@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../../model/hero';
 
 @Component({
   selector: 'app-heroes',
@@ -28,12 +28,8 @@ this.selectedHero = hero
 }
 
 
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {
   }
 
 }
-
-
-//criar novo componente (criar obj aluno - id, nome, end,idade,nota1, nota2,media,status)
-//criar no componente (aluno) uma lista de 10 alunos
-// rederizar se o aluno esta aprovado ou repro
