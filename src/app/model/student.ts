@@ -8,4 +8,5 @@ export interface Student {
   media?: number;
   status?: string;
 
+
 }

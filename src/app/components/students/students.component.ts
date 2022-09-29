@@ -19,6 +19,14 @@ export class StudentsComponent implements OnInit {
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {
     this.getStudents()
+    this.getMedia()
+    this.getStatus()
+  }
+  getStatus(): void {
+    this.dataSource = [...this.studentsService.status()]
+  }
+  getMedia(): void {
+    this.dataSource = [...this.studentsService.averageCalculation()]
   }
   getStudents(): void {
     this.dataSource = [...this.studentsService.getStudents()]
